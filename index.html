@@ -3,293 +3,316 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vasoya Meet · Shopify & full stack developer</title>
-  <meta name="description" content="Vasoya Meet is a full stack developer in Surat and CEO of Hexafusion Infotech. Shopify stores, websites and custom CRMs for brands in India and Scandinavia.">
-  <meta name="theme-color" content="#f6f4ef">
+  <title>Vasoya Meet — Full Stack & Shopify Developer</title>
+  <meta name="description" content="Vasoya Meet is a full stack developer with 4+ years of experience building fast, high-converting websites, Shopify stores, WordPress sites and custom CRMs for brands in India and Europe.">
+  <meta name="keywords" content="Vasoya Meet, full stack developer, Shopify developer, WordPress developer, React developer, Next.js developer, freelance web developer India, CRM development">
+  <meta name="theme-color" content="#07070a">
   <link rel="canonical" href="https://vmeet-portfolio.vercel.app/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://vmeet-portfolio.vercel.app/">
-  <meta property="og:title" content="Vasoya Meet · Shopify & full stack developer">
-  <meta property="og:description" content="Shopify stores, websites and custom CRMs for brands in India and Scandinavia.">
+  <meta property="og:title" content="Vasoya Meet — Full Stack & Shopify Developer">
+  <meta property="og:description" content="Fast, beautiful websites, Shopify stores and custom software. 34+ live sites shipped.">
   <meta property="og:image" content="https://vmeet-portfolio.vercel.app/assets/img/og.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://vmeet-portfolio.vercel.app/assets/img/og.jpg">
+  <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="preconnect" href="https://image.thum.io">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/meet.webp">
   <link rel="stylesheet" href="assets/css/style.css">
-  <script>document.documentElement.classList.add("js")</script>
 
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Person","name":"Vasoya Meet","jobTitle":"CEO, Hexafusion Infotech","url":"https://vmeet-portfolio.vercel.app/","image":"https://vmeet-portfolio.vercel.app/assets/img/meet.webp","email":"mailto:v.meet0503@gmail.com","telephone":"+91 90231 78824","sameAs":["https://github.com/VMeet053"],"worksFor":{"@type":"Organization","name":"Hexafusion Infotech","url":"https://hexafusion-infotech.vercel.app/"},"address":{"@type":"PostalAddress","addressLocality":"Surat","addressRegion":"Gujarat","addressCountry":"IN"}}
+  {"@context":"https://schema.org","@type":"Person","name":"Vasoya Meet","jobTitle":"Full Stack Developer","url":"https://vmeet-portfolio.vercel.app/","image":"https://vmeet-portfolio.vercel.app/assets/img/og.jpg","sameAs":["https://github.com/VMeet053"],"email":"mailto:v.meet0503@gmail.com","telephone":"+91 90231 78824","knowsAbout":["Shopify","WordPress","React","Next.js","Node.js","PHP","CRM Development"]}
   </script>
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"></div>
 
+  <!-- ============ NAV ============ -->
   <header class="nav" id="nav">
-    <div class="wrap nav__in">
-      <a class="brand" href="#top" aria-label="Vasoya Meet, back to top">
-        <span class="brand__mark">M</span>
-        <span class="brand__text">Vasoya Meet<small>Shopify &amp; full stack developer</small></span>
+    <div class="nav__inner container">
+      <a href="#top" class="logo" aria-label="Vasoya Meet — home">
+        <span class="logo__mark">VM</span><span class="logo__dot">.</span>
       </a>
-      <nav class="nav__links" id="menu" aria-label="Main">
+      <nav class="nav__links" aria-label="Primary">
         <a href="#work">Work</a>
         <a href="#services">Services</a>
+        <a href="#process">Process</a>
         <a href="#about">About</a>
-        <a href="#contact" class="nav__cta">Start a project</a>
       </nav>
-      <button class="nav__toggle" id="toggle" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+      <div class="nav__right">
+        <span class="status"><i></i>Available for projects</span>
+        <a href="#contact" class="btn btn--sm btn--light magnetic">Let's talk</a>
+        <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span></button>
+      </div>
     </div>
   </header>
 
-  <main id="main">
-    <!-- Hero -->
-    <section class="hero" id="top">
-      <div class="wrap hero__grid">
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="mailto:v.meet0503@gmail.com" class="mobile-menu__mail">v.meet0503@gmail.com</a>
+  </div>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="orb orb--1"></div>
+        <div class="orb orb--2"></div>
+        <div class="grid-lines"></div>
+      </div>
+
+      <div class="container hero__inner">
         <div class="hero__copy">
-          <p class="pill"><span class="pill__dot"></span> Founder &amp; CEO, Hexafusion Infotech</p>
-          <h1>Shopify stores &amp; websites <em>built to sell.</em></h1>
-          <p class="hero__lead">I'm Meet, a full stack developer from Surat. For 4+ years I've built online stores, business websites and custom CRMs for brands in India, Denmark, Norway and Sweden.</p>
-          <div class="hero__actions">
-            <a class="btn btn--navy" href="#work">View my work <span aria-hidden="true">→</span></a>
-            <a class="btn btn--line" href="tel:+919023178824">Book a call</a>
+          <p class="eyebrow reveal"><span class="eyebrow__line"></span>Full Stack Developer · India</p>
+          <h1 class="hero__title reveal">
+            I build <em class="serif">websites</em><br>
+            that feel
+            <span class="rotator"><span class="rotator__word grad">premium.</span></span>
+          </h1>
+          <p class="hero__lead reveal">Hi, I'm <strong>Vasoya Meet</strong>. For 4+ years I've designed and engineered Shopify stores, WordPress sites, React apps and custom CRMs for brands across India and Europe. Clean code, fast pages, on-time delivery.</p>
+          <div class="hero__cta reveal">
+            <a href="#work" class="btn btn--grad magnetic">View my work <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+            <a href="#contact" class="btn btn--ghost magnetic">Start a project</a>
           </div>
-          <ul class="hero__skills">
+          <ul class="hero__trust reveal" aria-label="Platforms">
             <li>Shopify</li><li>WordPress</li><li>React</li><li>Next.js</li><li>Node.js</li>
           </ul>
         </div>
 
-        <div class="hero__visual">
-          <div class="frame">
-            <img src="assets/img/meet.webp" alt="Vasoya Meet" width="841" height="900" fetchpriority="high">
+        <div class="hero__visual reveal">
+          <div class="portrait">
+            <div class="portrait__ring" aria-hidden="true"></div>
+            <div class="portrait__glow" aria-hidden="true"></div>
+            <img src="assets/img/meet.webp" alt="Portrait of Vasoya Meet" width="841" height="900" fetchpriority="high">
+            <div class="chip chip--a float"><span class="chip__icon">⚡</span><div><b>Shopify</b><small>Themes · Liquid · Apps</small></div></div>
+            <div class="chip chip--b float" style="--d:1.5s"><span class="chip__icon chip__icon--g">✓</span><div><b>34+ live sites</b><small>India · Europe · Global</small></div></div>
+            <div class="chip chip--c float" style="--d:.8s"><code>&lt;React /&gt;</code></div>
           </div>
-          <div class="float float--top">
-            <strong>20+</strong>
-            <span>live websites<br>shipped</span>
-          </div>
-          <div class="float float--bottom">
-            <span class="float__codes"><i>IN</i><i>DK</i><i>NO</i><i>SE</i></span>
-            <span>Clients in 4 countries</span>
-          </div>
-          <svg class="spin" viewBox="0 0 200 200" aria-hidden="true">
-            <defs><path id="circle" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"/></defs>
-            <circle cx="100" cy="100" r="98" class="spin__bg"/>
-            <text><textPath href="#circle" textLength="458" lengthAdjust="spacing">SHOPIFY · WORDPRESS · REACT · CUSTOM CRM · </textPath></text>
-            <path class="spin__star" d="M100 78 L106 94 L122 100 L106 106 L100 122 L94 106 L78 100 L94 94 Z"/>
-          </svg>
         </div>
       </div>
+
+      <a href="#stats" class="scroll-cue" aria-label="Scroll down"><span></span></a>
     </section>
 
-    <!-- Clients -->
-    <section class="clients" aria-label="Brands I've built for">
-      <p class="clients__label">Brands I've built for</p>
-      <div class="clients__viewport">
-        <div class="clients__track">
-          <ul><li>Ziblon Fashion</li><li>Collectors Cage</li><li>Alaknanda Diamond</li><li>Indian Rani</li><li>Nordic Zen</li><li>Pangaea Pathways</li><li>Aquitaz</li><li>Optima Sport</li><li>Stride Ahead</li><li>Kirti Construction</li></ul>
-          <ul aria-hidden="true"><li>Ziblon Fashion</li><li>Collectors Cage</li><li>Alaknanda Diamond</li><li>Indian Rani</li><li>Nordic Zen</li><li>Pangaea Pathways</li><li>Aquitaz</li><li>Optima Sport</li><li>Stride Ahead</li><li>Kirti Construction</li></ul>
-        </div>
+    <!-- ============ STATS ============ -->
+    <section class="stats container" id="stats">
+      <div class="stat reveal"><b data-count="4" data-suffix="+">0</b><span>Years building for the web</span></div>
+      <div class="stat reveal"><b data-count="34" data-suffix="+">0</b><span>Live websites shipped</span></div>
+      <div class="stat reveal"><b data-count="10" data-suffix="+">0</b><span>Core technologies</span></div>
+      <div class="stat reveal"><b data-count="7">0</b><span>Services, end to end</span></div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Shopify</span><i>✦</i><span>React</span><i>✦</i><span>Next.js</span><i>✦</i><span>WordPress</span><i>✦</i><span>Node.js</span><i>✦</i><span>PHP</span><i>✦</i><span>Liquid</span><i>✦</i><span>Tailwind</span><i>✦</i><span>AWS</span><i>✦</i><span>Vercel</span><i>✦</i>
+        <span>Shopify</span><i>✦</i><span>React</span><i>✦</i><span>Next.js</span><i>✦</i><span>WordPress</span><i>✦</i><span>Node.js</span><i>✦</i><span>PHP</span><i>✦</i><span>Liquid</span><i>✦</i><span>Tailwind</span><i>✦</i><span>AWS</span><i>✦</i><span>Vercel</span><i>✦</i>
       </div>
-    </section>
+    </div>
 
-    <!-- Featured -->
+    <!-- ============ WORK ============ -->
     <section class="section" id="work">
-      <div class="wrap">
-        <div class="head">
-          <p class="eyebrow">Featured project</p>
-          <h2>Real stores, <em>live right now.</em></h2>
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal"><span class="eyebrow__line"></span>01 — Selected work</p>
+          <h2 class="section__title reveal">Real brands. <em class="serif">Live</em> websites.</h2>
+          <p class="section__sub reveal">A few recent builds across fashion, education, healthcare, construction and jewellery. Every one is live — click through and see for yourself.</p>
         </div>
 
-        <article class="featured reveal">
-          <a class="featured__shot" href="https://ziblonfashion.com/" rel="noopener" aria-label="Visit Ziblon Fashion">
-            <span class="chrome"><i></i><i></i><i></i><span>ziblonfashion.com</span></span>
-            <img src="assets/img/work/ziblon.webp" alt="Ziblon Fashion homepage" width="1080" height="675" loading="lazy">
+        <div class="featured">
+          <a class="card reveal" href="https://ziblonfashion.com/" target="_blank" rel="noopener" data-tilt>
+            <div class="card__media" data-label="Ziblon Fashion"><img loading="lazy" decoding="async" onerror="this.parentNode.classList.add('is-fallback');this.remove()" src="https://image.thum.io/get/width/1200/crop/800/noanimate/https://ziblonfashion.com/" alt="Ziblon Fashion website"></div>
+            <div class="card__body"><div><span class="tag">E-commerce · Fashion</span><h3>Ziblon Fashion</h3></div><span class="card__arrow">↗</span></div>
           </a>
-          <div class="featured__text">
-            <span class="featured__no">01</span>
-            <h3>Ziblon Fashion</h3>
-            <p>A Shopify store for an Indian ethnic wear label. Collections, offers and a checkout that feels quick on a phone, because that's where most of their customers shop.</p>
-            <dl class="featured__facts">
-              <div><dt>Platform</dt><dd>Shopify</dd></div>
-              <div><dt>Industry</dt><dd>Fashion</dd></div>
-              <div><dt>Market</dt><dd>India</dd></div>
-            </dl>
-            <a class="link" href="https://ziblonfashion.com/" rel="noopener">Visit the store <span aria-hidden="true">↗</span></a>
-          </div>
-        </article>
+          <a class="card reveal" href="https://pangaeapathways.com/" target="_blank" rel="noopener" data-tilt>
+            <div class="card__media" data-label="Pangaea Pathways"><img loading="lazy" decoding="async" onerror="this.parentNode.classList.add('is-fallback');this.remove()" src="https://image.thum.io/get/width/1200/crop/800/noanimate/https://pangaeapathways.com/" alt="Pangaea Pathways website"></div>
+            <div class="card__body"><div><span class="tag">Education · Website</span><h3>Pangaea Pathways</h3></div><span class="card__arrow">↗</span></div>
+          </a>
+          <a class="card reveal" href="https://crm.pangaeapathways.com/" target="_blank" rel="noopener" data-tilt>
+            <div class="card__media" data-label="Pangaea CRM"><img loading="lazy" decoding="async" onerror="this.parentNode.classList.add('is-fallback');this.remove()" src="https://image.thum.io/get/width/1200/crop/800/noanimate/https://crm.pangaeapathways.com/" alt="Pangaea CRM"></div>
+            <div class="card__body"><div><span class="tag">Custom software · CRM</span><h3>Pangaea CRM</h3></div><span class="card__arrow">↗</span></div>
+          </a>
+          <a class="card reveal" href="https://www.gharoocare.com/" target="_blank" rel="noopener" data-tilt>
+            <div class="card__media" data-label="Gharoo Care"><img loading="lazy" decoding="async" onerror="this.parentNode.classList.add('is-fallback');this.remove()" src="https://image.thum.io/get/width/1200/crop/800/noanimate/https://www.gharoocare.com/" alt="Gharoo Care website"></div>
+            <div class="card__body"><div><span class="tag">Healthcare · Services</span><h3>Gharoo Care</h3></div><span class="card__arrow">↗</span></div>
+          </a>
+          <a class="card reveal" href="https://kirticonstruction.co.in/" target="_blank" rel="noopener" data-tilt>
+            <div class="card__media" data-label="Kirti Construction"><img loading="lazy" decoding="async" onerror="this.parentNode.classList.add('is-fallback');this.remove()" src="https://image.thum.io/get/width/1200/crop/800/noanimate/https://kirticonstruction.co.in/" alt="Kirti Construction website"></div>
+            <div class="card__body"><div><span class="tag">Construction · Corporate</span><h3>Kirti Construction</h3></div><span class="card__arrow">↗</span></div>
+          </a>
+          <a class="card reveal" href="https://alaknandadiamond.com/" target="_blank" rel="noopener" data-tilt>
+            <div class="card__media" data-label="Alaknanda Diamond"><img loading="lazy" decoding="async" onerror="this.parentNode.classList.add('is-fallback');this.remove()" src="https://image.thum.io/get/width/1200/crop/800/noanimate/https://alaknandadiamond.com/" alt="Alaknanda Diamond website"></div>
+            <div class="card__body"><div><span class="tag">Jewellery · Catalogue</span><h3>Alaknanda Diamond</h3></div><span class="card__arrow">↗</span></div>
+          </a>
+        </div>
 
-        <!-- Gallery with filters -->
-        <div class="gallery">
-          <div class="gallery__bar">
-            <h3>More projects</h3>
-            <div class="filters" role="group" aria-label="Filter projects">
-              <button type="button" class="filter is-on" data-filter="all" aria-pressed="true">All <span>12</span></button>
-              <button type="button" class="filter" data-filter="shopify" aria-pressed="false">Shopify <span>8</span></button>
-              <button type="button" class="filter" data-filter="web" aria-pressed="false">Websites &amp; apps <span>4</span></button>
-            </div>
+        <div class="archive">
+          <div class="archive__head reveal">
+            <h3>More live projects</h3>
+            <span class="mono muted"><span id="archiveCount">28</span> sites · hover to preview</span>
           </div>
-
-          <ul class="grid">
-            <li class="card" data-type="shopify"><a href="https://collectorscage.dk/" rel="noopener"><span class="card__img"><img src="assets/img/work/collectorscage.webp" alt="" width="1080" height="675" loading="lazy"></span><span class="card__body"><strong>Collectors Cage</strong><span>Luxury resale · Denmark</span></span><span class="card__go" aria-hidden="true">↗</span></a></li>
-            <li class="card" data-type="shopify"><a href="https://alaknandadiamond.com/" rel="noopener"><span class="card__img"><img src="assets/img/work/alaknanda.webp" alt="" width="1080" height="675" loading="lazy"></span><span class="card__body"><strong>Alaknanda Diamond</strong><span>Jewellery · India</span></span><span class="card__go" aria-hidden="true">↗</span></a></li>
-            <li class="card" data-type="web"><a href="https://pangaeapathways.com/" rel="noopener"><span class="card__img"><img src="assets/img/work/pangaea.webp" alt="" width="1080" height="675" loading="lazy"></span><span class="card__body"><strong>Pangaea Pathways</strong><span>Website + CRM · Education</span></span><span class="card__go" aria-hidden="true">↗</span></a></li>
-            <li class="card" data-type="shopify"><a href="https://www.indianrani.com/" rel="noopener"><span class="card__img"><img src="assets/img/work/indianrani.webp" alt="" width="1080" height="675" loading="lazy"></span><span class="card__body"><strong>Indian Rani</strong><span>Ethnic wear · India</span></span><span class="card__go" aria-hidden="true">↗</span></a></li>
-            <li class="card" data-type="shopify"><a href="https://nordiczen.dk/" rel="noopener"><span class="card__img"><img src="assets/img/work/nordiczen.webp" alt="" width="1080" height="675" loading="lazy"></span><span class="card__body"><strong>Nordic Zen</strong><span>Sleep products · Denmark</span></span><span class="card__go" aria-hidden="true">↗</span></a></li>
-            <li class="card" data-type="shopify"><a href="https://aquitaz.se/" rel="noopener"><span class="card__img"><img src="assets/img/work/aquitaz.webp" alt="" width="1080" height="675" loading="lazy"></span><span class="card__body"><strong>Aquitaz</strong><span>Trading cards · Sweden</span></span><span class="card__go" aria-hidden="true">↗</span></a></li>
-            <li class="card" data-type="web"><a href="https://www.strideahead.io/" rel="noopener"><span class="card__img"><img src="assets/img/work/strideahead.webp" alt="" width="1080" height="675" loading="lazy"></span><span class="card__body"><strong>Stride Ahead</strong><span>Next.js platform · EdTech</span></span><span class="card__go" aria-hidden="true">↗</span></a></li>
-            <li class="card" data-type="shopify"><a href="https://optimasport.dk/" rel="noopener"><span class="card__img"><img src="assets/img/work/optimasport.webp" alt="" width="1080" height="675" loading="lazy"></span><span class="card__body"><strong>Optima Sport</strong><span>Training gear · Denmark</span></span><span class="card__go" aria-hidden="true">↗</span></a></li>
-            <li class="card" data-type="web"><a href="https://www.kirticonstruction.co.in/" rel="noopener"><span class="card__img"><img src="assets/img/work/kirti.webp" alt="" width="1080" height="675" loading="lazy"></span><span class="card__body"><strong>Kirti Construction</strong><span>Company website · India</span></span><span class="card__go" aria-hidden="true">↗</span></a></li>
-            <li class="card" data-type="shopify"><a href="https://venutaloza.com/" rel="noopener"><span class="card__img"><img src="assets/img/work/venutaloza.webp" alt="" width="1080" height="675" loading="lazy"></span><span class="card__body"><strong>Venutaloza</strong><span>Kidswear · India</span></span><span class="card__go" aria-hidden="true">↗</span></a></li>
-            <li class="card" data-type="web"><a href="https://matmedlassen.dk/" rel="noopener"><span class="card__img"><img src="assets/img/work/matmedlassen.webp" alt="" width="1080" height="675" loading="lazy"></span><span class="card__body"><strong>Mat Med Lassen</strong><span>Education · Denmark</span></span><span class="card__go" aria-hidden="true">↗</span></a></li>
-            <li class="card" data-type="shopify"><a href="https://silicakart.in/" rel="noopener"><span class="card__img"><img src="assets/img/work/silicakart.webp" alt="" width="1080" height="675" loading="lazy"></span><span class="card__body"><strong>Silica Kart</strong><span>Home storage · India</span></span><span class="card__go" aria-hidden="true">↗</span></a></li>
-          </ul>
-          <p class="gallery__more">Also <a href="https://biontechindia.com/" rel="noopener">Biontech India</a>, <a href="https://takeimpact.com/" rel="noopener">Take Impact</a>, <a href="https://naturesnctar.dk/" rel="noopener">Natures Nctar</a>, <a href="https://reactivate.dk/" rel="noopener">Reactivate</a> and <a href="https://meotine.no/" rel="noopener">Meotine</a>.</p>
+          <ol class="archive__list" id="archiveList"></ol>
+          <div class="preview" id="preview" aria-hidden="true"><img alt=""></div>
         </div>
       </div>
     </section>
 
-    <!-- Countries band -->
-    <section class="band" aria-labelledby="band-title">
-      <div class="wrap">
-        <div class="band__head">
-          <p class="eyebrow eyebrow--light">Where my clients are</p>
-          <h2 id="band-title">From Surat to <em>Scandinavia.</em></h2>
+    <!-- ============ SERVICES ============ -->
+    <section class="section section--alt" id="services">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal"><span class="eyebrow__line"></span>02 — Services</p>
+          <h2 class="section__title reveal">Everything you need to <em class="serif">launch</em> and grow.</h2>
         </div>
-        <ul class="countries">
-          <li class="reveal"><span class="countries__code">IN</span><strong>India</strong><span>Home base in Surat. Fashion, jewellery, education and more.</span></li>
-          <li class="reveal"><span class="countries__code">DK</span><strong>Denmark</strong><span>Six Shopify stores, from luxury bags to training gear.</span></li>
-          <li class="reveal"><span class="countries__code">SE</span><strong>Sweden</strong><span>A trading card game store with a big catalogue.</span></li>
-          <li class="reveal"><span class="countries__code">NO</span><strong>Norway</strong><span>A Shopify store for a Norwegian brand.</span></li>
-        </ul>
+
+        <div class="bento">
+          <article class="tile tile--xl reveal" data-spot>
+            <div class="tile__icon"><svg viewBox="0 0 24 24"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg></div>
+            <h3>Shopify Development</h3>
+            <p>Custom themes, sections and Liquid code, app integrations and store setup — built to load fast and convert browsers into buyers.</p>
+            <ul class="pills"><li>Custom themes</li><li>Liquid</li><li>Store setup</li><li>Speed optimisation</li></ul>
+          </article>
+          <article class="tile reveal" data-spot>
+            <div class="tile__icon"><svg viewBox="0 0 24 24"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M13 6l-2 12"/></svg></div>
+            <h3>Web Development</h3>
+            <p>Fast, secure, scalable websites built on modern tech, shaped around your business.</p>
+          </article>
+          <article class="tile reveal" data-spot>
+            <div class="tile__icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 21h8"/></svg></div>
+            <h3>Frontend Development</h3>
+            <p>Responsive, interactive interfaces with React, Next.js, JavaScript and Tailwind.</p>
+          </article>
+          <article class="tile reveal" data-spot>
+            <div class="tile__icon"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/></svg></div>
+            <h3>Backend & APIs</h3>
+            <p>REST APIs, databases, authentication and server logic that just works.</p>
+          </article>
+          <article class="tile reveal" data-spot>
+            <div class="tile__icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3.5 9h17M3.5 15h17M12 3c2.5 2.5 3.5 5.5 3.5 9s-1 6.5-3.5 9c-2.5-2.5-3.5-5.5-3.5-9s1-6.5 3.5-9Z"/></svg></div>
+            <h3>WordPress</h3>
+            <p>Professional, easy-to-manage WordPress sites with custom functionality.</p>
+          </article>
+          <article class="tile tile--wide reveal" data-spot>
+            <div class="tile__icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M16 11h5M16 15h5M18.5 8.5v9"/></svg></div>
+            <h3>CRM & Custom Software</h3>
+            <p>Tailored CRMs and internal tools to manage leads, customers, sales and operations — so your team stops juggling spreadsheets.</p>
+            <ul class="pills"><li>Lead tracking</li><li>Dashboards</li><li>Automation</li></ul>
+          </article>
+          <article class="tile reveal" data-spot>
+            <div class="tile__icon"><svg viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16v4Z"/><path d="m13 7 4 4"/></svg></div>
+            <h3>Web Design</h3>
+            <p>Modern, visually engaging layouts with a clear, user-first flow.</p>
+          </article>
+          <a href="#contact" class="tile tile--cta reveal" data-spot>
+            <span class="mono">Not sure what you need?</span>
+            <h3>Let's figure it out together <span aria-hidden="true">→</span></h3>
+          </a>
+        </div>
       </div>
     </section>
 
-    <!-- Services -->
-    <section class="section" id="services">
-      <div class="wrap">
-        <div class="head head--split">
-          <div>
-            <p class="eyebrow">Services</p>
-            <h2>What I can <em>build for you.</em></h2>
+    <!-- ============ PROCESS ============ -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal"><span class="eyebrow__line"></span>03 — Process</p>
+          <h2 class="section__title reveal">Simple, transparent, <em class="serif">on time.</em></h2>
+        </div>
+        <div class="steps">
+          <div class="step reveal"><span class="step__n">01</span><h3>Discover</h3><p>We talk goals, audience and scope. You get a clear plan, timeline and quote — no surprises.</p></div>
+          <div class="step reveal"><span class="step__n">02</span><h3>Design</h3><p>Wireframes and visual direction for your approval before a single line of code is written.</p></div>
+          <div class="step reveal"><span class="step__n">03</span><h3>Build</h3><p>Clean, fast, responsive development with regular previews so you always see progress.</p></div>
+          <div class="step reveal"><span class="step__n">04</span><h3>Launch & support</h3><p>Testing, go-live, handover and ongoing support so your site keeps performing.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section section--alt" id="about">
+      <div class="container about">
+        <div class="about__intro">
+          <p class="eyebrow reveal"><span class="eyebrow__line"></span>04 — About</p>
+          <h2 class="section__title reveal">Developer by training, <em class="serif">problem-solver</em> by habit.</h2>
+          <p class="reveal">I'm a full stack developer with a Master's in Computer Applications and 4+ years of hands-on experience. I care about the details that clients feel — how fast a page loads, how easy checkout is, how simple it is for your team to update content.</p>
+          <p class="reveal">Since 2024 I've worked full-time as an independent developer with clients across India, Scandinavia and beyond.</p>
+
+          <div class="skills reveal" aria-label="Skills">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Next.js</span><span>Node.js</span><span>PHP</span><span>Shopify / Liquid</span><span>WordPress</span><span>Tailwind</span><span>Git / GitHub</span><span>Vercel / AWS</span>
           </div>
-          <p>From a single landing page to a full online store, with one person who stays accountable from the first call to launch day.</p>
         </div>
 
-        <ul class="services">
-          <li class="reveal">
-            <span class="services__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg></span>
-            <h3>Shopify stores</h3>
-            <p>Custom themes and sections in Liquid, store setup, apps and speed work, so you can run the store yourself.</p>
-          </li>
-          <li class="reveal">
-            <span class="services__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg></span>
-            <h3>Business websites</h3>
-            <p>Fast, responsive sites in WordPress or Next.js that look sharp on every phone and are easy to update.</p>
-          </li>
-          <li class="reveal">
-            <span class="services__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M13.5 6l-3 12"/></svg></span>
-            <h3>Web apps</h3>
-            <p>React and Next.js front ends connected to the APIs and data your product needs.</p>
-          </li>
-          <li class="reveal">
-            <span class="services__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M6 17c.6-1.6 1.8-2.4 3-2.4s2.4.8 3 2.4M14.5 9.5h4M14.5 13h4"/></svg></span>
-            <h3>CRMs &amp; tools</h3>
-            <p>Lead tracking, dashboards and admin panels shaped around how your team already works.</p>
-          </li>
-        </ul>
+        <div class="timeline">
+          <h3 class="timeline__label mono reveal">Experience</h3>
+          <div class="tl reveal"><span class="tl__date mono">2024 — Now</span><div><h4>Full Stack Developer</h4><p>Independent · Remote</p></div></div>
+          <div class="tl reveal"><span class="tl__date mono">2022 — 2024</span><div><h4>Full Stack Developer</h4><p>Go Higher Infotech · Remote</p></div></div>
 
-        <ol class="steps">
-          <li class="reveal"><span>1</span><h3>Discover</h3><p>Goals, audience and scope. You get a clear plan, timeline and quote.</p></li>
-          <li class="reveal"><span>2</span><h3>Design</h3><p>Layout and visual direction approved before any code is written.</p></li>
-          <li class="reveal"><span>3</span><h3>Build</h3><p>Regular preview links, so you always see progress.</p></li>
-          <li class="reveal"><span>4</span><h3>Launch</h3><p>Testing, go-live, handover and support after launch.</p></li>
-        </ol>
+          <h3 class="timeline__label mono reveal">Education</h3>
+          <div class="tl reveal"><span class="tl__date mono">2021 — 2023</span><div><h4>Master of Computer Applications</h4><p>Bhagwan Mahavir University</p></div></div>
+          <div class="tl reveal"><span class="tl__date mono">2018 — 2021</span><div><h4>Bachelor of Computer Applications</h4><p>Bhagwan Mahavir University</p></div></div>
+        </div>
       </div>
     </section>
 
-    <!-- About -->
-    <section class="section section--soft" id="about">
-      <div class="wrap about">
-        <div class="about__main">
-          <p class="eyebrow">About me</p>
-          <h2>A developer who now <em>runs the team.</em></h2>
-          <p class="about__quote">“I care about the things your customers notice: how fast the page loads, how easy checkout is, and how simple it is for your team to update.”</p>
-          <div class="about__text">
-            <p>I studied computer applications at Bhagwan Mahavir University and began my career at Go Higher Infotech in 2022, working remotely on client websites and Shopify stores.</p>
-            <p>In 2024 I started working with clients directly, which brought stores for Danish, Norwegian and Swedish brands alongside work for Indian businesses.</p>
-            <p>Today I lead <a href="https://hexafusion-infotech.vercel.app/">Hexafusion Infotech</a> with our CTO <a href="https://disha-portfolio-rose.vercel.app/">Disha Hingu</a>. I handle clients and planning, and still build a lot of the Shopify and front-end work myself.</p>
-          </div>
-        </div>
-
-        <aside class="cv reveal">
-          <h3>Experience</h3>
-          <ol>
-            <li><span>Now</span><div><strong>Founder &amp; CEO</strong><em>Hexafusion Infotech, Surat</em></div></li>
-            <li><span>2024 – now</span><div><strong>Full stack developer</strong><em>Independent, remote</em></div></li>
-            <li><span>2022 – 2024</span><div><strong>Full stack developer</strong><em>Go Higher Infotech, remote</em></div></li>
-          </ol>
-          <h3>Education</h3>
-          <ol>
-            <li><span>2021 – 2023</span><div><strong>Master of Computer Applications</strong><em>Bhagwan Mahavir University</em></div></li>
-            <li><span>2018 – 2021</span><div><strong>Bachelor of Computer Applications</strong><em>Bhagwan Mahavir University</em></div></li>
-          </ol>
-          <h3>Toolkit</h3>
-          <ul class="toolkit"><li>Shopify / Liquid</li><li>WordPress</li><li>React</li><li>Next.js</li><li>Node.js</li><li>PHP</li><li>Tailwind</li><li>Vercel</li><li>AWS</li></ul>
-        </aside>
-      </div>
-    </section>
-
-    <!-- Contact -->
+    <!-- ============ CONTACT ============ -->
     <section class="contact" id="contact">
-      <div class="wrap contact__grid">
-        <div>
-          <p class="eyebrow eyebrow--light">Contact</p>
-          <h2>Let's build your <em>next store.</em></h2>
-          <p class="contact__lead">Tell me a little about your project. I usually reply within a day.</p>
-          <ul class="contact__list">
-            <li><span>Email</span><a href="mailto:v.meet0503@gmail.com">v.meet0503@gmail.com</a></li>
-            <li><span>Phone</span><a href="tel:+919023178824">+91 90231 78824</a></li>
-            <li><span>WhatsApp</span><a href="https://wa.me/919023178824">Message me</a></li>
-            <li><span>GitHub</span><a href="https://github.com/VMeet053">@VMeet053</a></li>
-          </ul>
-        </div>
+      <div class="contact__bg" aria-hidden="true"><div class="orb orb--3"></div></div>
+      <div class="container">
+        <p class="eyebrow reveal"><span class="eyebrow__line"></span>05 — Contact</p>
+        <h2 class="contact__title reveal">Have a project<br>in <em class="serif grad">mind?</em></h2>
 
-        <form class="form" id="form">
-          <div class="form__row">
-            <label for="f-name">Your name</label>
-            <input id="f-name" name="name" autocomplete="name" required maxlength="80">
-          </div>
-          <div class="form__row">
-            <span class="form__label" id="f-type-label">I need help with</span>
-            <div class="form__chips" role="radiogroup" aria-labelledby="f-type-label">
-              <label><input type="radio" name="type" value="a Shopify store" checked><span>Shopify store</span></label>
-              <label><input type="radio" name="type" value="a website"><span>Website</span></label>
-              <label><input type="radio" name="type" value="a web app or CRM"><span>Web app / CRM</span></label>
-              <label><input type="radio" name="type" value="something else"><span>Other</span></label>
+        <div class="contact__grid">
+          <div class="contact__info reveal">
+            <p class="muted">Tell me what you're building. I usually reply within 24 hours.</p>
+            <button class="mail-copy magnetic" data-copy="v.meet0503@gmail.com">
+              <span>v.meet0503@gmail.com</span><small class="mono">Click to copy</small>
+            </button>
+            <div class="contact__links">
+              <a href="tel:+919023178824" class="link-row"><span class="mono muted">Call</span><span>+91 90231 78824</span><span>↗</span></a>
+              <a href="https://wa.me/919023178824" target="_blank" rel="noopener" class="link-row"><span class="mono muted">WhatsApp</span><span>Message me</span><span>↗</span></a>
+              <a href="https://github.com/VMeet053" target="_blank" rel="noopener" class="link-row"><span class="mono muted">GitHub</span><span>@VMeet053</span><span>↗</span></a>
             </div>
           </div>
-          <div class="form__row">
-            <label for="f-msg">Project details</label>
-            <textarea id="f-msg" name="message" rows="4" required maxlength="2000" placeholder="What are you building, and when do you need it?"></textarea>
-          </div>
-          <button class="btn btn--orange" type="submit">Send message <span aria-hidden="true">→</span></button>
-          <p class="form__note">Opens your email app with the message ready to send.</p>
-        </form>
+
+          <form class="form reveal" id="contactForm" novalidate>
+            <div class="field"><input id="f-name" name="name" required placeholder=" " autocomplete="name"><label for="f-name">Your name</label></div>
+            <div class="field"><input id="f-email" name="email" type="email" required placeholder=" " autocomplete="email"><label for="f-email">Email address</label></div>
+            <fieldset class="choice">
+              <legend class="mono muted">I need help with</legend>
+              <label><input type="radio" name="type" value="Shopify store" checked><span>Shopify</span></label>
+              <label><input type="radio" name="type" value="Website"><span>Website</span></label>
+              <label><input type="radio" name="type" value="Web app / CRM"><span>Web app / CRM</span></label>
+              <label><input type="radio" name="type" value="Other"><span>Other</span></label>
+            </fieldset>
+            <div class="field"><textarea id="f-msg" name="message" rows="4" required placeholder=" "></textarea><label for="f-msg">Tell me about your project</label></div>
+            <button class="btn btn--grad btn--full magnetic" type="submit">Send message <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></button>
+            <p class="form__note mono muted" id="formNote" role="status" aria-live="polite">Opens your email app with the message ready to send.</p>
+          </form>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="foot">
-    <div class="wrap foot__in">
-      <span>© <span id="year">2026</span> Vasoya Meet · Surat, India</span>
-      <span>CEO at <a href="https://hexafusion-infotech.vercel.app/">Hexafusion Infotech</a></span>
-      <a href="#top">Back to top ↑</a>
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="logo"><span class="logo__mark">VM</span><span class="logo__dot">.</span></span>
+      <span class="muted">© <span id="year">2026</span> Vasoya Meet. Designed & built by hand.</span>
+      <a href="#top" class="muted to-top">Back to top ↑</a>
     </div>
   </footer>
 
