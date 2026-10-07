@@ -1,6 +1,6 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// Solid nav background once you scroll.
+// Shadow under the nav once you scroll.
 const nav = document.getElementById("nav");
 const onScroll = () => nav.classList.toggle("is-stuck", window.scrollY > 10);
 onScroll();
@@ -11,7 +11,6 @@ const toggle = document.getElementById("toggle");
 const menu = document.getElementById("menu");
 const setMenu = (open) => {
   menu.classList.toggle("is-open", open);
-  nav.classList.toggle("is-open", open);
   toggle.setAttribute("aria-expanded", String(open));
   toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
 };
@@ -54,32 +53,32 @@ links.forEach((a) => {
   if (section) spy.observe(section);
 });
 
-// Project index: show a screenshot that follows the cursor (mouse only).
-const peek = document.getElementById("peek");
-const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
-if (peek && finePointer) {
-  let x = 0, y = 0, cx = 0, cy = 0, raf = 0;
-  const follow = () => {
-    cx += (x - cx) * 0.18;
-    cy += (y - cy) * 0.18;
-    peek.style.left = cx + "px";
-    peek.style.top = cy + "px";
-    raf = Math.abs(x - cx) + Math.abs(y - cy) > 0.5 ? requestAnimationFrame(follow) : 0;
-  };
-  document.querySelectorAll(".index a").forEach((row) => {
-    row.addEventListener("mouseenter", (e) => {
-      const src = row.dataset.img;
-      if (!src) return;
-      peek.src = src;
-      cx = x = e.clientX + 200;
-      cy = y = e.clientY;
-      peek.classList.add("is-on");
+// Project filters.
+const filters = document.querySelectorAll(".filter");
+const cards = document.querySelectorAll(".card");
+filters.forEach((btn) =>
+  btn.addEventListener("click", () => {
+    const type = btn.dataset.filter;
+    filters.forEach((b) => {
+      const on = b === btn;
+      b.classList.toggle("is-on", on);
+      b.setAttribute("aria-pressed", String(on));
     });
-    row.addEventListener("mousemove", (e) => {
-      x = e.clientX + 200;
-      y = e.clientY;
-      if (!raf) raf = requestAnimationFrame(follow);
+    cards.forEach((card) => {
+      card.hidden = type !== "all" && card.dataset.type !== type;
     });
-    row.addEventListener("mouseleave", () => peek.classList.remove("is-on"));
-  });
-}
+  })
+);
+
+// Contact form: open the visitor's email app with the message filled in.
+document.getElementById("form").addEventListener("submit", (e) => {
+  e.preventDefault();
+  const data = new FormData(e.target);
+  const name = String(data.get("name") || "").trim();
+  const type = String(data.get("type") || "a project");
+  const message = String(data.get("message") || "").trim();
+  const subject = `Project enquiry: ${type}`;
+  const body = `Hi Meet,\n\nI need help with ${type}.\n\n${message}\n\n— ${name}`;
+  window.location.href =
+    "mailto:v.meet0503@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+});

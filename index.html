@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Vasoya Meet · Shopify & full stack developer</title>
   <meta name="description" content="Vasoya Meet is a full stack developer in Surat and CEO of Hexafusion Infotech. Shopify stores, websites and custom CRMs for brands in India and Scandinavia.">
-  <meta name="theme-color" content="#0e0e0e">
+  <meta name="theme-color" content="#f6f4ef">
   <link rel="canonical" href="https://vmeet-portfolio.vercel.app/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://vmeet-portfolio.vercel.app/">
@@ -21,7 +21,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <script>document.documentElement.classList.add("js")</script>
 
@@ -34,13 +34,15 @@
 
   <header class="nav" id="nav">
     <div class="wrap nav__in">
-      <a class="logo" href="#top" aria-label="Vasoya Meet, back to top">VM<span>.</span></a>
+      <a class="brand" href="#top" aria-label="Vasoya Meet, back to top">
+        <span class="brand__mark">M</span>
+        <span class="brand__text">Vasoya Meet<small>Shopify &amp; full stack developer</small></span>
+      </a>
       <nav class="nav__links" id="menu" aria-label="Main">
         <a href="#work">Work</a>
-        <a href="#index">All projects</a>
         <a href="#services">Services</a>
         <a href="#about">About</a>
-        <a href="#contact" class="nav__cta">Let's talk</a>
+        <a href="#contact" class="nav__cta">Start a project</a>
       </nav>
       <button class="nav__toggle" id="toggle" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
     </div>
@@ -49,200 +51,244 @@
   <main id="main">
     <!-- Hero -->
     <section class="hero" id="top">
-      <div class="wrap">
-        <div class="hero__meta">
-          <p><span class="live"></span> Available for new projects</p>
-          <p>Surat, India · Working with brands in India &amp; Scandinavia</p>
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="pill"><span class="pill__dot"></span> Founder &amp; CEO, Hexafusion Infotech</p>
+          <h1>Shopify stores &amp; websites <em>built to sell.</em></h1>
+          <p class="hero__lead">I'm Meet, a full stack developer from Surat. For 4+ years I've built online stores, business websites and custom CRMs for brands in India, Denmark, Norway and Sweden.</p>
+          <div class="hero__actions">
+            <a class="btn btn--navy" href="#work">View my work <span aria-hidden="true">→</span></a>
+            <a class="btn btn--line" href="tel:+919023178824">Book a call</a>
+          </div>
+          <ul class="hero__skills">
+            <li>Shopify</li><li>WordPress</li><li>React</li><li>Next.js</li><li>Node.js</li>
+          </ul>
         </div>
 
-        <div class="hero__grid">
-          <div class="hero__copy">
-            <h1 class="hero__name" aria-label="Vasoya Meet">
-              <span class="line"><span>Vasoya</span></span>
-              <span class="line line--accent"><span>Meet.</span></span>
-            </h1>
-            <p class="hero__role">Full stack developer &amp; CEO of <a href="https://hexafusion-infotech.vercel.app/">Hexafusion Infotech</a></p>
-            <p class="hero__lead">I build Shopify stores and websites that load fast, look sharp on every phone, and are easy for your team to run.</p>
-            <div class="hero__actions">
-              <a class="btn btn--accent" href="#work">See the work <span aria-hidden="true">↘</span></a>
-              <a class="btn btn--ghost" href="https://wa.me/919023178824">WhatsApp me</a>
-            </div>
+        <div class="hero__visual">
+          <div class="frame">
+            <img src="assets/img/meet.webp" alt="Vasoya Meet" width="841" height="900" fetchpriority="high">
           </div>
-          <div class="hero__side">
-            <figure class="hero__photo">
-              <img src="assets/img/meet.webp" alt="Vasoya Meet" width="841" height="900" fetchpriority="high">
-              <figcaption>
-                <span>Currently</span>
-                <strong>Leading Hexafusion Infotech</strong>
-              </figcaption>
-            </figure>
-            <dl class="stats">
-              <div><dt>4+</dt><dd>years building for the web</dd></div>
-              <div><dt>20+</dt><dd>live sites shipped</dd></div>
-              <div><dt>4</dt><dd>countries served</dd></div>
-            </dl>
+          <div class="float float--top">
+            <strong>20+</strong>
+            <span>live websites<br>shipped</span>
           </div>
+          <div class="float float--bottom">
+            <span class="float__codes"><i>IN</i><i>DK</i><i>NO</i><i>SE</i></span>
+            <span>Clients in 4 countries</span>
+          </div>
+          <svg class="spin" viewBox="0 0 200 200" aria-hidden="true">
+            <defs><path id="circle" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"/></defs>
+            <circle cx="100" cy="100" r="98" class="spin__bg"/>
+            <text><textPath href="#circle" textLength="458" lengthAdjust="spacing">SHOPIFY · WORDPRESS · REACT · CUSTOM CRM · </textPath></text>
+            <path class="spin__star" d="M100 78 L106 94 L122 100 L106 106 L100 122 L94 106 L78 100 L94 94 Z"/>
+          </svg>
         </div>
       </div>
     </section>
 
-    <!-- Marquee -->
-    <div class="ticker" aria-hidden="true">
-      <div class="ticker__track">
-        <span>Shopify</span><b>●</b><span>WordPress</span><b>●</b><span>React</span><b>●</b><span>Next.js</span><b>●</b><span>Custom CRMs</span><b>●</b><span>Node.js</span><b>●</b>
-        <span>Shopify</span><b>●</b><span>WordPress</span><b>●</b><span>React</span><b>●</b><span>Next.js</span><b>●</b><span>Custom CRMs</span><b>●</b><span>Node.js</span><b>●</b>
+    <!-- Clients -->
+    <section class="clients" aria-label="Brands I've built for">
+      <p class="clients__label">Brands I've built for</p>
+      <div class="clients__viewport">
+        <div class="clients__track">
+          <ul><li>Ziblon Fashion</li><li>Collectors Cage</li><li>Alaknanda Diamond</li><li>Indian Rani</li><li>Nordic Zen</li><li>Pangaea Pathways</li><li>Aquitaz</li><li>Optima Sport</li><li>Stride Ahead</li><li>Kirti Construction</li></ul>
+          <ul aria-hidden="true"><li>Ziblon Fashion</li><li>Collectors Cage</li><li>Alaknanda Diamond</li><li>Indian Rani</li><li>Nordic Zen</li><li>Pangaea Pathways</li><li>Aquitaz</li><li>Optima Sport</li><li>Stride Ahead</li><li>Kirti Construction</li></ul>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Featured work -->
+    <!-- Featured -->
     <section class="section" id="work">
       <div class="wrap">
-        <div class="sec-title">
-          <h2>Selected<br><em>work</em></h2>
-          <p>A few of the stores and sites I'm proudest of. All of them are live, so click through and try them.</p>
+        <div class="head">
+          <p class="eyebrow">Featured project</p>
+          <h2>Real stores, <em>live right now.</em></h2>
         </div>
 
-        <div class="featured">
-          <a class="feat reveal" href="https://ziblonfashion.com/" rel="noopener">
-            <div class="feat__img"><img src="assets/img/work/ziblon.webp" alt="Ziblon Fashion homepage" width="1080" height="675" loading="lazy"></div>
-            <div class="feat__info">
-              <div><h3>Ziblon Fashion</h3><p>Shopify store for an Indian ethnic wear label, built for shoppers on their phones.</p></div>
-              <span class="feat__tag">Shopify · India</span>
-            </div>
+        <article class="featured reveal">
+          <a class="featured__shot" href="https://ziblonfashion.com/" rel="noopener" aria-label="Visit Ziblon Fashion">
+            <span class="chrome"><i></i><i></i><i></i><span>ziblonfashion.com</span></span>
+            <img src="assets/img/work/ziblon.webp" alt="Ziblon Fashion homepage" width="1080" height="675" loading="lazy">
           </a>
-          <a class="feat reveal" href="https://collectorscage.dk/" rel="noopener">
-            <div class="feat__img"><img src="assets/img/work/collectorscage.webp" alt="Collectors Cage homepage" width="1080" height="675" loading="lazy"></div>
-            <div class="feat__info">
-              <div><h3>Collectors Cage</h3><p>Danish store for pre-owned luxury bags, with clean product pages in Danish.</p></div>
-              <span class="feat__tag">Shopify · Denmark</span>
+          <div class="featured__text">
+            <span class="featured__no">01</span>
+            <h3>Ziblon Fashion</h3>
+            <p>A Shopify store for an Indian ethnic wear label. Collections, offers and a checkout that feels quick on a phone, because that's where most of their customers shop.</p>
+            <dl class="featured__facts">
+              <div><dt>Platform</dt><dd>Shopify</dd></div>
+              <div><dt>Industry</dt><dd>Fashion</dd></div>
+              <div><dt>Market</dt><dd>India</dd></div>
+            </dl>
+            <a class="link" href="https://ziblonfashion.com/" rel="noopener">Visit the store <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <!-- Gallery with filters -->
+        <div class="gallery">
+          <div class="gallery__bar">
+            <h3>More projects</h3>
+            <div class="filters" role="group" aria-label="Filter projects">
+              <button type="button" class="filter is-on" data-filter="all" aria-pressed="true">All <span>12</span></button>
+              <button type="button" class="filter" data-filter="shopify" aria-pressed="false">Shopify <span>8</span></button>
+              <button type="button" class="filter" data-filter="web" aria-pressed="false">Websites &amp; apps <span>4</span></button>
             </div>
-          </a>
-          <a class="feat reveal" href="https://alaknandadiamond.com/" rel="noopener">
-            <div class="feat__img"><img src="assets/img/work/alaknanda.webp" alt="Alaknanda Diamond homepage" width="1080" height="675" loading="lazy"></div>
-            <div class="feat__info">
-              <div><h3>Alaknanda Diamond</h3><p>Online catalogue for a diamond and jewellery brand that puts the photography first.</p></div>
-              <span class="feat__tag">Shopify · India</span>
-            </div>
-          </a>
-          <a class="feat reveal" href="https://pangaeapathways.com/" rel="noopener">
-            <div class="feat__img"><img src="assets/img/work/pangaea.webp" alt="Pangaea Pathways homepage" width="1080" height="675" loading="lazy"></div>
-            <div class="feat__info">
-              <div><h3>Pangaea Pathways</h3><p>Study-abroad consultancy website, plus the custom CRM their counsellors use daily.</p></div>
-              <span class="feat__tag">Website + CRM</span>
-            </div>
-          </a>
+          </div>
+
+          <ul class="grid">
+            <li class="card" data-type="shopify"><a href="https://collectorscage.dk/" rel="noopener"><span class="card__img"><img src="assets/img/work/collectorscage.webp" alt="" width="1080" height="675" loading="lazy"></span><span class="card__body"><strong>Collectors Cage</strong><span>Luxury resale · Denmark</span></span><span class="card__go" aria-hidden="true">↗</span></a></li>
+            <li class="card" data-type="shopify"><a href="https://alaknandadiamond.com/" rel="noopener"><span class="card__img"><img src="assets/img/work/alaknanda.webp" alt="" width="1080" height="675" loading="lazy"></span><span class="card__body"><strong>Alaknanda Diamond</strong><span>Jewellery · India</span></span><span class="card__go" aria-hidden="true">↗</span></a></li>
+            <li class="card" data-type="web"><a href="https://pangaeapathways.com/" rel="noopener"><span class="card__img"><img src="assets/img/work/pangaea.webp" alt="" width="1080" height="675" loading="lazy"></span><span class="card__body"><strong>Pangaea Pathways</strong><span>Website + CRM · Education</span></span><span class="card__go" aria-hidden="true">↗</span></a></li>
+            <li class="card" data-type="shopify"><a href="https://www.indianrani.com/" rel="noopener"><span class="card__img"><img src="assets/img/work/indianrani.webp" alt="" width="1080" height="675" loading="lazy"></span><span class="card__body"><strong>Indian Rani</strong><span>Ethnic wear · India</span></span><span class="card__go" aria-hidden="true">↗</span></a></li>
+            <li class="card" data-type="shopify"><a href="https://nordiczen.dk/" rel="noopener"><span class="card__img"><img src="assets/img/work/nordiczen.webp" alt="" width="1080" height="675" loading="lazy"></span><span class="card__body"><strong>Nordic Zen</strong><span>Sleep products · Denmark</span></span><span class="card__go" aria-hidden="true">↗</span></a></li>
+            <li class="card" data-type="shopify"><a href="https://aquitaz.se/" rel="noopener"><span class="card__img"><img src="assets/img/work/aquitaz.webp" alt="" width="1080" height="675" loading="lazy"></span><span class="card__body"><strong>Aquitaz</strong><span>Trading cards · Sweden</span></span><span class="card__go" aria-hidden="true">↗</span></a></li>
+            <li class="card" data-type="web"><a href="https://www.strideahead.io/" rel="noopener"><span class="card__img"><img src="assets/img/work/strideahead.webp" alt="" width="1080" height="675" loading="lazy"></span><span class="card__body"><strong>Stride Ahead</strong><span>Next.js platform · EdTech</span></span><span class="card__go" aria-hidden="true">↗</span></a></li>
+            <li class="card" data-type="shopify"><a href="https://optimasport.dk/" rel="noopener"><span class="card__img"><img src="assets/img/work/optimasport.webp" alt="" width="1080" height="675" loading="lazy"></span><span class="card__body"><strong>Optima Sport</strong><span>Training gear · Denmark</span></span><span class="card__go" aria-hidden="true">↗</span></a></li>
+            <li class="card" data-type="web"><a href="https://www.kirticonstruction.co.in/" rel="noopener"><span class="card__img"><img src="assets/img/work/kirti.webp" alt="" width="1080" height="675" loading="lazy"></span><span class="card__body"><strong>Kirti Construction</strong><span>Company website · India</span></span><span class="card__go" aria-hidden="true">↗</span></a></li>
+            <li class="card" data-type="shopify"><a href="https://venutaloza.com/" rel="noopener"><span class="card__img"><img src="assets/img/work/venutaloza.webp" alt="" width="1080" height="675" loading="lazy"></span><span class="card__body"><strong>Venutaloza</strong><span>Kidswear · India</span></span><span class="card__go" aria-hidden="true">↗</span></a></li>
+            <li class="card" data-type="web"><a href="https://matmedlassen.dk/" rel="noopener"><span class="card__img"><img src="assets/img/work/matmedlassen.webp" alt="" width="1080" height="675" loading="lazy"></span><span class="card__body"><strong>Mat Med Lassen</strong><span>Education · Denmark</span></span><span class="card__go" aria-hidden="true">↗</span></a></li>
+            <li class="card" data-type="shopify"><a href="https://silicakart.in/" rel="noopener"><span class="card__img"><img src="assets/img/work/silicakart.webp" alt="" width="1080" height="675" loading="lazy"></span><span class="card__body"><strong>Silica Kart</strong><span>Home storage · India</span></span><span class="card__go" aria-hidden="true">↗</span></a></li>
+          </ul>
+          <p class="gallery__more">Also <a href="https://biontechindia.com/" rel="noopener">Biontech India</a>, <a href="https://takeimpact.com/" rel="noopener">Take Impact</a>, <a href="https://naturesnctar.dk/" rel="noopener">Natures Nctar</a>, <a href="https://reactivate.dk/" rel="noopener">Reactivate</a> and <a href="https://meotine.no/" rel="noopener">Meotine</a>.</p>
         </div>
       </div>
     </section>
 
-    <!-- Project index -->
-    <section class="section section--index" id="index">
+    <!-- Countries band -->
+    <section class="band" aria-labelledby="band-title">
       <div class="wrap">
-        <div class="sec-title">
-          <h2>All<br><em>projects</em></h2>
-          <p>More stores and sites from the last few years. Hover a name to preview it; every row opens the live site.</p>
+        <div class="band__head">
+          <p class="eyebrow eyebrow--light">Where my clients are</p>
+          <h2 id="band-title">From Surat to <em>Scandinavia.</em></h2>
         </div>
-
-        <ol class="index">
-          <li><a href="https://www.indianrani.com/" rel="noopener" data-img="assets/img/work/indianrani.webp"><span class="index__no">01</span><span class="index__name">Indian Rani</span><span class="index__type">Shopify · Ethnic wear</span><span class="index__where">India</span><span class="index__go" aria-hidden="true">↗</span></a></li>
-          <li><a href="https://nordiczen.dk/" rel="noopener" data-img="assets/img/work/nordiczen.webp"><span class="index__no">02</span><span class="index__name">Nordic Zen</span><span class="index__type">Shopify · Sleep products</span><span class="index__where">Denmark</span><span class="index__go" aria-hidden="true">↗</span></a></li>
-          <li><a href="https://aquitaz.se/" rel="noopener" data-img="assets/img/work/aquitaz.webp"><span class="index__no">03</span><span class="index__name">Aquitaz</span><span class="index__type">Shopify · Trading cards</span><span class="index__where">Sweden</span><span class="index__go" aria-hidden="true">↗</span></a></li>
-          <li><a href="https://www.strideahead.io/" rel="noopener" data-img="assets/img/work/strideahead.webp"><span class="index__no">04</span><span class="index__name">Stride Ahead</span><span class="index__type">Next.js · EdTech platform</span><span class="index__where">India</span><span class="index__go" aria-hidden="true">↗</span></a></li>
-          <li><a href="https://optimasport.dk/" rel="noopener" data-img="assets/img/work/optimasport.webp"><span class="index__no">05</span><span class="index__name">Optima Sport</span><span class="index__type">Shopify · Training gear</span><span class="index__where">Denmark</span><span class="index__go" aria-hidden="true">↗</span></a></li>
-          <li><a href="https://www.kirticonstruction.co.in/" rel="noopener" data-img="assets/img/work/kirti.webp"><span class="index__no">06</span><span class="index__name">Kirti Construction</span><span class="index__type">Company website</span><span class="index__where">India</span><span class="index__go" aria-hidden="true">↗</span></a></li>
-          <li><a href="https://venutaloza.com/" rel="noopener" data-img="assets/img/work/venutaloza.webp"><span class="index__no">07</span><span class="index__name">Venutaloza</span><span class="index__type">Shopify · Kidswear</span><span class="index__where">India</span><span class="index__go" aria-hidden="true">↗</span></a></li>
-          <li><a href="https://matmedlassen.dk/" rel="noopener" data-img="assets/img/work/matmedlassen.webp"><span class="index__no">08</span><span class="index__name">Mat Med Lassen</span><span class="index__type">Education site</span><span class="index__where">Denmark</span><span class="index__go" aria-hidden="true">↗</span></a></li>
-          <li><a href="https://silicakart.in/" rel="noopener" data-img="assets/img/work/silicakart.webp"><span class="index__no">09</span><span class="index__name">Silica Kart</span><span class="index__type">Shopify · Home storage</span><span class="index__where">India</span><span class="index__go" aria-hidden="true">↗</span></a></li>
-          <li><a href="https://biontechindia.com/" rel="noopener" data-img="assets/img/work/biontech.webp"><span class="index__no">10</span><span class="index__name">Biontech India</span><span class="index__type">Brand website</span><span class="index__where">India</span><span class="index__go" aria-hidden="true">↗</span></a></li>
-          <li><a href="https://takeimpact.com/" rel="noopener" data-img="assets/img/work/takeimpact.webp"><span class="index__no">11</span><span class="index__name">Take Impact</span><span class="index__type">Shopify · Wellness</span><span class="index__where">Online</span><span class="index__go" aria-hidden="true">↗</span></a></li>
-          <li><a href="https://naturesnctar.dk/" rel="noopener"><span class="index__no">12</span><span class="index__name">Natures Nctar</span><span class="index__type">Shopify store</span><span class="index__where">Denmark</span><span class="index__go" aria-hidden="true">↗</span></a></li>
-          <li><a href="https://reactivate.dk/" rel="noopener"><span class="index__no">13</span><span class="index__name">Reactivate</span><span class="index__type">Shopify store</span><span class="index__where">Denmark</span><span class="index__go" aria-hidden="true">↗</span></a></li>
-          <li><a href="https://meotine.no/" rel="noopener"><span class="index__no">14</span><span class="index__name">Meotine</span><span class="index__type">Shopify store</span><span class="index__where">Norway</span><span class="index__go" aria-hidden="true">↗</span></a></li>
-        </ol>
+        <ul class="countries">
+          <li class="reveal"><span class="countries__code">IN</span><strong>India</strong><span>Home base in Surat. Fashion, jewellery, education and more.</span></li>
+          <li class="reveal"><span class="countries__code">DK</span><strong>Denmark</strong><span>Six Shopify stores, from luxury bags to training gear.</span></li>
+          <li class="reveal"><span class="countries__code">SE</span><strong>Sweden</strong><span>A trading card game store with a big catalogue.</span></li>
+          <li class="reveal"><span class="countries__code">NO</span><strong>Norway</strong><span>A Shopify store for a Norwegian brand.</span></li>
+        </ul>
       </div>
-      <img class="peek" id="peek" alt="" aria-hidden="true">
     </section>
 
     <!-- Services -->
     <section class="section" id="services">
       <div class="wrap">
-        <div class="sec-title">
-          <h2>What I<br><em>do</em></h2>
-          <p>From a single landing page to a full online store, with one person accountable from the first call to launch day.</p>
+        <div class="head head--split">
+          <div>
+            <p class="eyebrow">Services</p>
+            <h2>What I can <em>build for you.</em></h2>
+          </div>
+          <p>From a single landing page to a full online store, with one person who stays accountable from the first call to launch day.</p>
         </div>
+
         <ul class="services">
-          <li class="reveal"><span class="services__no">01</span><h3>Shopify stores</h3><p>Custom themes and sections in Liquid, store setup, apps and speed work. Built so you can manage products yourself.</p></li>
-          <li class="reveal"><span class="services__no">02</span><h3>Business websites</h3><p>Fast, responsive sites in WordPress or Next.js that look sharp on every phone and are easy to update.</p></li>
-          <li class="reveal"><span class="services__no">03</span><h3>Web apps &amp; front ends</h3><p>Interfaces in React, Next.js and Tailwind, connected to the APIs and data your product needs.</p></li>
-          <li class="reveal"><span class="services__no">04</span><h3>CRMs &amp; internal tools</h3><p>Lead tracking, dashboards and admin panels shaped around how your team already works.</p></li>
+          <li class="reveal">
+            <span class="services__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg></span>
+            <h3>Shopify stores</h3>
+            <p>Custom themes and sections in Liquid, store setup, apps and speed work, so you can run the store yourself.</p>
+          </li>
+          <li class="reveal">
+            <span class="services__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg></span>
+            <h3>Business websites</h3>
+            <p>Fast, responsive sites in WordPress or Next.js that look sharp on every phone and are easy to update.</p>
+          </li>
+          <li class="reveal">
+            <span class="services__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M13.5 6l-3 12"/></svg></span>
+            <h3>Web apps</h3>
+            <p>React and Next.js front ends connected to the APIs and data your product needs.</p>
+          </li>
+          <li class="reveal">
+            <span class="services__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M6 17c.6-1.6 1.8-2.4 3-2.4s2.4.8 3 2.4M14.5 9.5h4M14.5 13h4"/></svg></span>
+            <h3>CRMs &amp; tools</h3>
+            <p>Lead tracking, dashboards and admin panels shaped around how your team already works.</p>
+          </li>
         </ul>
 
-        <div class="process reveal">
-          <h3>How a project runs</h3>
-          <ol>
-            <li><b>Talk</b> Goals, scope and a clear quote.</li>
-            <li><b>Design</b> Layout approved before any code.</li>
-            <li><b>Build</b> Preview links as it comes together.</li>
-            <li><b>Launch</b> Go-live, handover and support.</li>
-          </ol>
-        </div>
+        <ol class="steps">
+          <li class="reveal"><span>1</span><h3>Discover</h3><p>Goals, audience and scope. You get a clear plan, timeline and quote.</p></li>
+          <li class="reveal"><span>2</span><h3>Design</h3><p>Layout and visual direction approved before any code is written.</p></li>
+          <li class="reveal"><span>3</span><h3>Build</h3><p>Regular preview links, so you always see progress.</p></li>
+          <li class="reveal"><span>4</span><h3>Launch</h3><p>Testing, go-live, handover and support after launch.</p></li>
+        </ol>
       </div>
     </section>
 
     <!-- About -->
-    <section class="section" id="about">
+    <section class="section section--soft" id="about">
       <div class="wrap about">
         <div class="about__main">
-          <div class="sec-title sec-title--solo"><h2>About<br><em>me</em></h2></div>
-          <p class="about__big">Developer first. Now I also run the team.</p>
+          <p class="eyebrow">About me</p>
+          <h2>A developer who now <em>runs the team.</em></h2>
+          <p class="about__quote">“I care about the things your customers notice: how fast the page loads, how easy checkout is, and how simple it is for your team to update.”</p>
           <div class="about__text">
-            <p>I studied computer applications at Bhagwan Mahavir University and started my career at Go Higher Infotech in 2022, working remotely on client websites and Shopify stores.</p>
-            <p>In 2024 I started working with clients directly. That's how stores for brands in Denmark, Norway and Sweden ended up on my list next to work for Indian businesses.</p>
-            <p>Today I lead <a href="https://hexafusion-infotech.vercel.app/">Hexafusion Infotech</a> with our CTO, <a href="https://disha-portfolio-rose.vercel.app/">Disha Hingu</a>. I look after clients and planning, and I still build a lot of the Shopify and front-end work myself.</p>
+            <p>I studied computer applications at Bhagwan Mahavir University and began my career at Go Higher Infotech in 2022, working remotely on client websites and Shopify stores.</p>
+            <p>In 2024 I started working with clients directly, which brought stores for Danish, Norwegian and Swedish brands alongside work for Indian businesses.</p>
+            <p>Today I lead <a href="https://hexafusion-infotech.vercel.app/">Hexafusion Infotech</a> with our CTO <a href="https://disha-portfolio-rose.vercel.app/">Disha Hingu</a>. I handle clients and planning, and still build a lot of the Shopify and front-end work myself.</p>
           </div>
-          <ul class="tools">
-            <li>Shopify / Liquid</li><li>WordPress</li><li>React</li><li>Next.js</li><li>Node.js</li><li>PHP</li><li>Tailwind</li><li>Git</li><li>Vercel</li><li>AWS</li>
-          </ul>
         </div>
 
         <aside class="cv reveal">
           <h3>Experience</h3>
           <ol>
-            <li><span>Now</span><strong>CEO</strong><em>Hexafusion Infotech, Surat</em></li>
-            <li><span>2024 – now</span><strong>Full stack developer</strong><em>Independent, remote</em></li>
-            <li><span>2022 – 2024</span><strong>Full stack developer</strong><em>Go Higher Infotech, remote</em></li>
+            <li><span>Now</span><div><strong>Founder &amp; CEO</strong><em>Hexafusion Infotech, Surat</em></div></li>
+            <li><span>2024 – now</span><div><strong>Full stack developer</strong><em>Independent, remote</em></div></li>
+            <li><span>2022 – 2024</span><div><strong>Full stack developer</strong><em>Go Higher Infotech, remote</em></div></li>
           </ol>
           <h3>Education</h3>
           <ol>
-            <li><span>2021 – 2023</span><strong>Master of Computer Applications</strong><em>Bhagwan Mahavir University</em></li>
-            <li><span>2018 – 2021</span><strong>Bachelor of Computer Applications</strong><em>Bhagwan Mahavir University</em></li>
+            <li><span>2021 – 2023</span><div><strong>Master of Computer Applications</strong><em>Bhagwan Mahavir University</em></div></li>
+            <li><span>2018 – 2021</span><div><strong>Bachelor of Computer Applications</strong><em>Bhagwan Mahavir University</em></div></li>
           </ol>
+          <h3>Toolkit</h3>
+          <ul class="toolkit"><li>Shopify / Liquid</li><li>WordPress</li><li>React</li><li>Next.js</li><li>Node.js</li><li>PHP</li><li>Tailwind</li><li>Vercel</li><li>AWS</li></ul>
         </aside>
       </div>
     </section>
 
     <!-- Contact -->
     <section class="contact" id="contact">
-      <div class="wrap">
-        <p class="contact__kicker">Got a project?</p>
-        <h2 class="contact__big"><span>Let's work</span><span class="accent">together.</span></h2>
-        <div class="contact__row">
-          <a class="contact__mail" href="mailto:v.meet0503@gmail.com">v.meet0503@gmail.com <span aria-hidden="true">↗</span></a>
-          <ul class="contact__links">
-            <li><a href="https://wa.me/919023178824">WhatsApp</a></li>
-            <li><a href="tel:+919023178824">+91 90231 78824</a></li>
-            <li><a href="https://github.com/VMeet053">GitHub</a></li>
+      <div class="wrap contact__grid">
+        <div>
+          <p class="eyebrow eyebrow--light">Contact</p>
+          <h2>Let's build your <em>next store.</em></h2>
+          <p class="contact__lead">Tell me a little about your project. I usually reply within a day.</p>
+          <ul class="contact__list">
+            <li><span>Email</span><a href="mailto:v.meet0503@gmail.com">v.meet0503@gmail.com</a></li>
+            <li><span>Phone</span><a href="tel:+919023178824">+91 90231 78824</a></li>
+            <li><span>WhatsApp</span><a href="https://wa.me/919023178824">Message me</a></li>
+            <li><span>GitHub</span><a href="https://github.com/VMeet053">@VMeet053</a></li>
           </ul>
         </div>
-        <p class="contact__note">I usually reply within a day. For bigger projects, see what the team does at <a href="https://hexafusion-infotech.vercel.app/">Hexafusion Infotech</a>.</p>
+
+        <form class="form" id="form">
+          <div class="form__row">
+            <label for="f-name">Your name</label>
+            <input id="f-name" name="name" autocomplete="name" required maxlength="80">
+          </div>
+          <div class="form__row">
+            <span class="form__label" id="f-type-label">I need help with</span>
+            <div class="form__chips" role="radiogroup" aria-labelledby="f-type-label">
+              <label><input type="radio" name="type" value="a Shopify store" checked><span>Shopify store</span></label>
+              <label><input type="radio" name="type" value="a website"><span>Website</span></label>
+              <label><input type="radio" name="type" value="a web app or CRM"><span>Web app / CRM</span></label>
+              <label><input type="radio" name="type" value="something else"><span>Other</span></label>
+            </div>
+          </div>
+          <div class="form__row">
+            <label for="f-msg">Project details</label>
+            <textarea id="f-msg" name="message" rows="4" required maxlength="2000" placeholder="What are you building, and when do you need it?"></textarea>
+          </div>
+          <button class="btn btn--orange" type="submit">Send message <span aria-hidden="true">→</span></button>
+          <p class="form__note">Opens your email app with the message ready to send.</p>
+        </form>
       </div>
     </section>
   </main>
 
   <footer class="foot">
     <div class="wrap foot__in">
-      <span>© <span id="year">2026</span> Vasoya Meet</span>
-      <span>Surat, India</span>
+      <span>© <span id="year">2026</span> Vasoya Meet · Surat, India</span>
+      <span>CEO at <a href="https://hexafusion-infotech.vercel.app/">Hexafusion Infotech</a></span>
       <a href="#top">Back to top ↑</a>
     </div>
   </footer>
