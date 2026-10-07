@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vasoya Meet · Full stack developer</title>
-  <meta name="description" content="I'm Vasoya Meet, a full stack developer in Surat. I build Shopify stores, WordPress sites and React apps, and I run Hexafusion Infotech.">
-  <meta name="theme-color" content="#f7f6f3">
+  <title>Vasoya Meet · Shopify & full stack developer</title>
+  <meta name="description" content="Vasoya Meet is a full stack developer in Surat and CEO of Hexafusion Infotech. Shopify stores, WordPress sites and React apps for brands in India and Scandinavia.">
+  <meta name="theme-color" content="#f4f3ef">
   <link rel="canonical" href="https://vmeet-portfolio.vercel.app/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://vmeet-portfolio.vercel.app/">
-  <meta property="og:title" content="Vasoya Meet · Full stack developer">
+  <meta property="og:title" content="Vasoya Meet · Shopify & full stack developer">
   <meta property="og:description" content="Shopify stores, WordPress sites and React apps for brands in India and Scandinavia.">
   <meta property="og:image" content="https://vmeet-portfolio.vercel.app/assets/img/og.jpg">
   <meta property="og:image:width" content="1200">
@@ -21,8 +21,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add("js")</script>
 
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Person","name":"Vasoya Meet","jobTitle":"CEO, Hexafusion Infotech","url":"https://vmeet-portfolio.vercel.app/","image":"https://vmeet-portfolio.vercel.app/assets/img/meet.webp","email":"mailto:v.meet0503@gmail.com","telephone":"+91 90231 78824","sameAs":["https://github.com/VMeet053"],"worksFor":{"@type":"Organization","name":"Hexafusion Infotech","url":"https://hexafusion-infotech.vercel.app/"},"address":{"@type":"PostalAddress","addressLocality":"Surat","addressRegion":"Gujarat","addressCountry":"IN"}}
@@ -31,136 +32,244 @@
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <div class="page">
-    <header class="side">
-      <img class="side__photo" src="assets/img/meet.webp" alt="Vasoya Meet" width="120" height="120">
-      <h1 class="side__name">Vasoya Meet</h1>
-      <p class="side__role">Full stack developer, CEO at <a href="https://hexafusion-infotech.vercel.app/">Hexafusion&nbsp;Infotech</a></p>
-      <p class="side__intro">I build Shopify stores and websites for small brands in India and Scandinavia.</p>
-
-      <nav class="side__nav" aria-label="Sections">
-        <a href="#about">About</a>
+  <header class="bar" id="bar">
+    <div class="wrap bar__in">
+      <a class="brand" href="#top" aria-label="Vasoya Meet, back to top">
+        <span class="brand__mark">VM</span>
+        <span class="brand__name">Vasoya Meet</span>
+      </a>
+      <nav class="bar__nav" id="nav" aria-label="Main">
         <a href="#work">Work</a>
-        <a href="#experience">Experience</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
+      <a class="btn btn--dark btn--sm bar__cta" href="mailto:v.meet0503@gmail.com">Email me</a>
+      <button class="bar__menu" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+    </div>
+  </header>
 
-      <ul class="side__links">
-        <li><a href="mailto:v.meet0503@gmail.com">v.meet0503@gmail.com</a></li>
-        <li><a href="https://wa.me/919023178824">WhatsApp</a> · <a href="tel:+919023178824">+91 90231 78824</a></li>
-        <li><a href="https://github.com/VMeet053">github.com/VMeet053</a></li>
-      </ul>
-      <p class="side__place">Surat, Gujarat</p>
-    </header>
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow"><span class="dot"></span> Available for new projects</p>
+          <h1 class="hero__title">I build Shopify stores and websites that are <em>fast</em> and easy to run.</h1>
+          <p class="hero__lead">I'm Meet, a full stack developer from Surat and CEO of <a href="https://hexafusion-infotech.vercel.app/">Hexafusion Infotech</a>. For the last four years I've built stores, business websites and custom CRMs for brands in India, Denmark, Norway and Sweden.</p>
+          <div class="hero__actions">
+            <a class="btn btn--accent" href="#work">See my work <span aria-hidden="true">↓</span></a>
+            <a class="btn btn--line" href="https://wa.me/919023178824">Message on WhatsApp</a>
+          </div>
+        </div>
+        <figure class="hero__photo">
+          <img src="assets/img/meet.webp" alt="Vasoya Meet" width="841" height="900" fetchpriority="high">
+          <figcaption class="hero__tag">
+            <strong>CEO, Hexafusion Infotech</strong>
+            <span>Surat, Gujarat · IST</span>
+          </figcaption>
+        </figure>
+      </div>
 
-    <main id="main" class="main">
-      <section id="about" class="block">
-        <h2 class="block__title">About</h2>
-        <p>Hi, I'm Meet. I've been building websites professionally since 2022, mostly Shopify stores and WordPress sites, plus the occasional React app or CRM when a client needs something custom.</p>
-        <p>I spent my first two years at Go Higher Infotech, working remotely on client projects. In 2024 I started taking on clients directly, which is how I ended up building stores for brands in Denmark, Norway and Sweden as well as here in India.</p>
-        <p>These days I run <a href="https://hexafusion-infotech.vercel.app/">Hexafusion Infotech</a> with <a href="https://disha-portfolio-rose.vercel.app/">Disha Hingu</a>, who looks after the technical side as our CTO. I still write code, but a good part of my week now goes into client calls, estimates and keeping projects on schedule.</p>
-        <p class="tools"><strong>What I usually work with:</strong> Shopify and Liquid, WordPress, React, Next.js, Node.js, PHP, Tailwind, and Vercel or AWS for hosting.</p>
-      </section>
+      <div class="wrap">
+        <dl class="facts">
+          <div><dt>4+ years</dt><dd>building for the web</dd></div>
+          <div><dt>4 countries</dt><dd>India, Denmark, Norway, Sweden</dd></div>
+          <div><dt>Shopify first</dt><dd>plus WordPress, React &amp; Next.js</dd></div>
+          <div><dt>MCA</dt><dd>Bhagwan Mahavir University</dd></div>
+        </dl>
+      </div>
+    </section>
 
-      <section id="work" class="block">
-        <h2 class="block__title">Work</h2>
-        <p class="block__lead">Some of the live sites I've built or worked on. The more recent ones were done together with the team at Hexafusion.</p>
+    <!-- Client names -->
+    <section class="clients" aria-label="Some of the brands I've built for">
+      <div class="clients__track">
+        <ul>
+          <li>Ziblon Fashion</li><li>Alaknanda Diamond</li><li>Collectors Cage</li><li>Indian Rani</li><li>Nordic Zen</li><li>Pangaea Pathways</li><li>Aquitaz</li><li>Optima Sport</li><li>Stride Ahead</li>
+        </ul>
+        <ul aria-hidden="true">
+          <li>Ziblon Fashion</li><li>Alaknanda Diamond</li><li>Collectors Cage</li><li>Indian Rani</li><li>Nordic Zen</li><li>Pangaea Pathways</li><li>Aquitaz</li><li>Optima Sport</li><li>Stride Ahead</li>
+        </ul>
+      </div>
+    </section>
 
-        <div class="cards">
-          <a class="card" href="https://ziblonfashion.com/" rel="noopener">
-            <img src="assets/img/work/ziblon.webp" alt="Ziblon Fashion homepage" width="1080" height="675" loading="lazy">
-            <span class="card__name">Ziblon Fashion</span>
-            <span class="card__desc">Shopify store for an Indian ethnic wear label.</span>
-            <span class="card__meta">Shopify · India</span>
-          </a>
-          <a class="card" href="https://alaknandadiamond.com/" rel="noopener">
-            <img src="assets/img/work/alaknanda.webp" alt="Alaknanda Diamond homepage" width="1080" height="675" loading="lazy">
-            <span class="card__name">Alaknanda Diamond</span>
-            <span class="card__desc">Online catalogue for a lab-grown diamond and jewellery brand.</span>
-            <span class="card__meta">Shopify · India</span>
-          </a>
-          <a class="card" href="https://collectorscage.dk/" rel="noopener">
-            <img src="assets/img/work/collectorscage.webp" alt="Collectors Cage homepage" width="1080" height="675" loading="lazy">
-            <span class="card__name">Collectors Cage</span>
-            <span class="card__desc">Store for a Copenhagen shop selling pre-owned luxury bags.</span>
-            <span class="card__meta">Shopify · Denmark</span>
-          </a>
-          <a class="card" href="https://www.indianrani.com/" rel="noopener">
-            <img src="assets/img/work/indianrani.webp" alt="Indian Rani homepage" width="1080" height="675" loading="lazy">
-            <span class="card__name">Indian Rani</span>
-            <span class="card__desc">Women's ethnic wear: kurtis, lehengas, co-ord sets.</span>
-            <span class="card__meta">Shopify · India</span>
-          </a>
-          <a class="card" href="https://nordiczen.dk/" rel="noopener">
-            <img src="assets/img/work/nordiczen.webp" alt="Nordic Zen homepage" width="1080" height="675" loading="lazy">
-            <span class="card__name">Nordic Zen</span>
-            <span class="card__desc">Danish store selling body pillows and sleep products.</span>
-            <span class="card__meta">Shopify · Denmark</span>
-          </a>
-          <a class="card" href="https://pangaeapathways.com/" rel="noopener">
-            <img src="assets/img/work/pangaea.webp" alt="Pangaea Pathways homepage" width="1080" height="675" loading="lazy">
-            <span class="card__name">Pangaea Pathways</span>
-            <span class="card__desc">Website for a study-abroad consultancy, plus the CRM their team uses for leads.</span>
-            <span class="card__meta">Website and CRM · India</span>
-          </a>
+    <!-- Selected work -->
+    <section class="section" id="work">
+      <div class="wrap">
+        <div class="head">
+          <p class="eyebrow">Selected work</p>
+          <h2 class="title">Live sites, real clients.</h2>
+          <p class="head__note">Every project here is online right now. Click through and try them. The recent ones I built together with the team at Hexafusion.</p>
         </div>
 
-        <h3 class="sub">Other sites</h3>
-        <table class="list">
-          <thead><tr><th>Site</th><th>What it is</th><th>Where</th></tr></thead>
-          <tbody>
-            <tr><td><a href="https://www.kirticonstruction.co.in/" rel="noopener">Kirti Construction</a></td><td>Company site for a heritage restoration firm</td><td>India</td></tr>
-            <tr><td><a href="https://venutaloza.com/" rel="noopener">Venutaloza</a></td><td>Kidswear store, Shopify</td><td>India</td></tr>
-            <tr><td><a href="https://silicakart.in/" rel="noopener">Silica Kart</a></td><td>Kitchen storage products, Shopify</td><td>India</td></tr>
-            <tr><td><a href="https://biontechindia.com/" rel="noopener">Biontech India</a></td><td>Water ioniser brand site</td><td>India</td></tr>
-            <tr><td><a href="https://www.strideahead.io/" rel="noopener">Stride Ahead</a></td><td>Career assessment platform for students, Next.js</td><td>India</td></tr>
-            <tr><td><a href="https://takeimpact.com/" rel="noopener">Take Impact</a></td><td>Wellness supplements, Shopify</td><td></td></tr>
-            <tr><td><a href="https://optimasport.dk/" rel="noopener">Optima Sport</a></td><td>Recovery and training gear, Shopify</td><td>Denmark</td></tr>
-            <tr><td><a href="https://matmedlassen.dk/" rel="noopener">Mat Med Lassen</a></td><td>Maths books and tutoring</td><td>Denmark</td></tr>
-            <tr><td><a href="https://naturesnctar.dk/" rel="noopener">Natures Nctar</a></td><td>Shopify store</td><td>Denmark</td></tr>
-            <tr><td><a href="https://reactivate.dk/" rel="noopener">Reactivate</a></td><td>Shopify store</td><td>Denmark</td></tr>
-            <tr><td><a href="https://meotine.no/" rel="noopener">Meotine</a></td><td>Shopify store</td><td>Norway</td></tr>
-            <tr><td><a href="https://aquitaz.se/" rel="noopener">Aquitaz</a></td><td>Trading card game store, Shopify</td><td>Sweden</td></tr>
-          </tbody>
-        </table>
-      </section>
+        <div class="cases">
+          <article class="case reveal">
+            <a class="case__shot" href="https://ziblonfashion.com/" rel="noopener" aria-label="Visit Ziblon Fashion">
+              <span class="browser"><i></i><i></i><i></i><span>ziblonfashion.com</span></span>
+              <img src="assets/img/work/ziblon.webp" alt="Ziblon Fashion homepage" width="1080" height="675" loading="lazy">
+            </a>
+            <div class="case__body">
+              <span class="case__no">01</span>
+              <h3>Ziblon Fashion</h3>
+              <p>A Shopify store for an Indian ethnic wear label: collection pages, offers and a checkout that works smoothly on phones, where most of their customers shop.</p>
+              <ul class="tags"><li>Shopify</li><li>Liquid</li><li>E-commerce</li><li>India</li></ul>
+              <a class="more" href="https://ziblonfashion.com/" rel="noopener">Visit site <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
 
-      <section id="experience" class="block">
-        <h2 class="block__title">Experience</h2>
-        <ol class="timeline">
-          <li>
-            <span class="timeline__when">Now</span>
-            <div><strong>CEO, Hexafusion Infotech</strong><span>Surat</span>
-              <p>Running the company with Disha. I handle clients and planning, and still build a lot of the Shopify and front-end work myself.</p></div>
-          </li>
-          <li>
-            <span class="timeline__when">2024 – now</span>
-            <div><strong>Full stack developer, independent</strong><span>Remote</span>
-              <p>Shopify stores, WordPress sites and a few custom builds for clients in India and Scandinavia.</p></div>
-          </li>
-          <li>
-            <span class="timeline__when">2022 – 2024</span>
-            <div><strong>Full stack developer, Go Higher Infotech</strong><span>Remote</span>
-              <p>My first developer job, working on client websites and Shopify stores.</p></div>
-          </li>
-        </ol>
+          <article class="case case--flip reveal">
+            <a class="case__shot" href="https://collectorscage.dk/" rel="noopener" aria-label="Visit Collectors Cage">
+              <span class="browser"><i></i><i></i><i></i><span>collectorscage.dk</span></span>
+              <img src="assets/img/work/collectorscage.webp" alt="Collectors Cage homepage" width="1080" height="675" loading="lazy">
+            </a>
+            <div class="case__body">
+              <span class="case__no">02</span>
+              <h3>Collectors Cage</h3>
+              <p>Store for a Danish shop selling pre-owned luxury bags. Clean product pages that let the bags do the talking, in Danish.</p>
+              <ul class="tags"><li>Shopify</li><li>Luxury resale</li><li>Denmark</li></ul>
+              <a class="more" href="https://collectorscage.dk/" rel="noopener">Visit site <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
 
-        <h3 class="sub">Education</h3>
-        <ul class="plain">
-          <li><strong>Master of Computer Applications</strong>, Bhagwan Mahavir University, 2021 – 2023</li>
-          <li><strong>Bachelor of Computer Applications</strong>, Bhagwan Mahavir University, 2018 – 2021</li>
+          <article class="case reveal">
+            <a class="case__shot" href="https://alaknandadiamond.com/" rel="noopener" aria-label="Visit Alaknanda Diamond">
+              <span class="browser"><i></i><i></i><i></i><span>alaknandadiamond.com</span></span>
+              <img src="assets/img/work/alaknanda.webp" alt="Alaknanda Diamond homepage" width="1080" height="675" loading="lazy">
+            </a>
+            <div class="case__body">
+              <span class="case__no">03</span>
+              <h3>Alaknanda Diamond</h3>
+              <p>An online catalogue for a diamond and jewellery brand, built to show close-up product photography at its best.</p>
+              <ul class="tags"><li>Shopify</li><li>Jewellery</li><li>India</li></ul>
+              <a class="more" href="https://alaknandadiamond.com/" rel="noopener">Visit site <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="case case--flip reveal">
+            <a class="case__shot" href="https://pangaeapathways.com/" rel="noopener" aria-label="Visit Pangaea Pathways">
+              <span class="browser"><i></i><i></i><i></i><span>pangaeapathways.com</span></span>
+              <img src="assets/img/work/pangaea.webp" alt="Pangaea Pathways homepage" width="1080" height="675" loading="lazy">
+            </a>
+            <div class="case__body">
+              <span class="case__no">04</span>
+              <h3>Pangaea Pathways</h3>
+              <p>Website for a study-abroad consultancy, plus a custom CRM their counsellors use every day to track student leads and follow-ups.</p>
+              <ul class="tags"><li>Website</li><li>Custom CRM</li><li>Education</li></ul>
+              <a class="more" href="https://pangaeapathways.com/" rel="noopener">Visit site <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+
+        <h3 class="sub">More projects</h3>
+        <ul class="tiles">
+          <li class="tile reveal"><a href="https://www.indianrani.com/" rel="noopener"><img src="assets/img/work/indianrani.webp" alt="" width="1080" height="675" loading="lazy"><span class="tile__name">Indian Rani</span><span class="tile__meta">Shopify · Ethnic wear · India</span></a></li>
+          <li class="tile reveal"><a href="https://nordiczen.dk/" rel="noopener"><img src="assets/img/work/nordiczen.webp" alt="" width="1080" height="675" loading="lazy"><span class="tile__name">Nordic Zen</span><span class="tile__meta">Shopify · Sleep products · Denmark</span></a></li>
+          <li class="tile reveal"><a href="https://aquitaz.se/" rel="noopener"><img src="assets/img/work/aquitaz.webp" alt="" width="1080" height="675" loading="lazy"><span class="tile__name">Aquitaz</span><span class="tile__meta">Shopify · Trading cards · Sweden</span></a></li>
+          <li class="tile reveal"><a href="https://www.strideahead.io/" rel="noopener"><img src="assets/img/work/strideahead.webp" alt="" width="1080" height="675" loading="lazy"><span class="tile__name">Stride Ahead</span><span class="tile__meta">Next.js · EdTech platform</span></a></li>
+          <li class="tile reveal"><a href="https://optimasport.dk/" rel="noopener"><img src="assets/img/work/optimasport.webp" alt="" width="1080" height="675" loading="lazy"><span class="tile__name">Optima Sport</span><span class="tile__meta">Shopify · Training gear · Denmark</span></a></li>
+          <li class="tile reveal"><a href="https://www.kirticonstruction.co.in/" rel="noopener"><img src="assets/img/work/kirti.webp" alt="" width="1080" height="675" loading="lazy"><span class="tile__name">Kirti Construction</span><span class="tile__meta">Company website · India</span></a></li>
+          <li class="tile reveal"><a href="https://venutaloza.com/" rel="noopener"><img src="assets/img/work/venutaloza.webp" alt="" width="1080" height="675" loading="lazy"><span class="tile__name">Venutaloza</span><span class="tile__meta">Shopify · Kidswear · India</span></a></li>
+          <li class="tile reveal"><a href="https://matmedlassen.dk/" rel="noopener"><img src="assets/img/work/matmedlassen.webp" alt="" width="1080" height="675" loading="lazy"><span class="tile__name">Mat Med Lassen</span><span class="tile__meta">Education · Denmark</span></a></li>
+          <li class="tile reveal"><a href="https://silicakart.in/" rel="noopener"><img src="assets/img/work/silicakart.webp" alt="" width="1080" height="675" loading="lazy"><span class="tile__name">Silica Kart</span><span class="tile__meta">Shopify · Home storage · India</span></a></li>
         </ul>
-      </section>
+        <p class="also">Also: <a href="https://biontechindia.com/" rel="noopener">Biontech India</a>, <a href="https://takeimpact.com/" rel="noopener">Take Impact</a>, <a href="https://naturesnctar.dk/" rel="noopener">Natures Nctar</a>, <a href="https://reactivate.dk/" rel="noopener">Reactivate</a> and <a href="https://meotine.no/" rel="noopener">Meotine</a>.</p>
+      </div>
+    </section>
 
-      <section id="contact" class="block">
-        <h2 class="block__title">Contact</h2>
-        <p>If you need a store or a website, email me at <a href="mailto:v.meet0503@gmail.com">v.meet0503@gmail.com</a> with a few lines about the project and when you'd like it live. You can also message me on <a href="https://wa.me/919023178824">WhatsApp</a> or call on <a href="tel:+919023178824">+91 90231 78824</a>. I usually reply within a day.</p>
-        <p>For bigger projects, the <a href="https://hexafusion-infotech.vercel.app/#contact">Hexafusion Infotech</a> site has more about what our team does.</p>
-      </section>
+    <!-- Services -->
+    <section class="section section--tint" id="services">
+      <div class="wrap">
+        <div class="head">
+          <p class="eyebrow">What I do</p>
+          <h2 class="title">From a single landing page to a full store.</h2>
+        </div>
+        <ul class="services">
+          <li class="service reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+            <h3>Shopify stores</h3>
+            <p>Custom themes and sections in Liquid, store setup, apps and speed work, built so you can manage products yourself.</p>
+          </li>
+          <li class="service reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg>
+            <h3>Business websites</h3>
+            <p>Fast, responsive sites in WordPress or Next.js that look sharp on every phone and are easy to update.</p>
+          </li>
+          <li class="service reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M13.5 6l-3 12"/></svg>
+            <h3>React front ends</h3>
+            <p>Interfaces in React, Next.js and Tailwind, connected to the APIs and data your product needs.</p>
+          </li>
+          <li class="service reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M6 17c.6-1.6 1.8-2.4 3-2.4s2.4.8 3 2.4M14.5 9.5h4M14.5 13h4"/></svg>
+            <h3>CRMs &amp; custom tools</h3>
+            <p>Lead tracking, dashboards and admin panels shaped around how your team already works.</p>
+          </li>
+        </ul>
 
-      <footer class="foot">© <span id="year">2026</span> Vasoya Meet</footer>
-    </main>
-  </div>
+        <ol class="steps">
+          <li class="reveal"><span>01</span><h3>Talk</h3><p>We go through your goals and scope. You get a clear plan, timeline and quote.</p></li>
+          <li class="reveal"><span>02</span><h3>Design</h3><p>Layout and visual direction for your approval before any code is written.</p></li>
+          <li class="reveal"><span>03</span><h3>Build</h3><p>Regular preview links, so you always see progress and can give feedback early.</p></li>
+          <li class="reveal"><span>04</span><h3>Launch</h3><p>Testing, go-live and handover, with support after launch.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="wrap about">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2 class="title">Developer first, now running a team.</h2>
+          <div class="about__text">
+            <p>I studied computer applications at Bhagwan Mahavir University and started my career at Go Higher Infotech in 2022, working remotely on client websites and Shopify stores.</p>
+            <p>In 2024 I began working with clients directly, which is how stores for brands in Denmark, Norway and Sweden ended up on my list alongside work for Indian businesses.</p>
+            <p>Today I lead <a href="https://hexafusion-infotech.vercel.app/">Hexafusion Infotech</a> together with our CTO, <a href="https://disha-portfolio-rose.vercel.app/">Disha Hingu</a>. I look after clients and planning and still do a lot of the Shopify and front-end work myself.</p>
+          </div>
+          <ul class="tags tags--big">
+            <li>Shopify / Liquid</li><li>WordPress</li><li>React</li><li>Next.js</li><li>Node.js</li><li>PHP</li><li>Tailwind</li><li>Git</li><li>Vercel</li><li>AWS</li>
+          </ul>
+        </div>
+
+        <div class="cv">
+          <h3>Experience</h3>
+          <ol class="timeline">
+            <li><span>Now</span><div><strong>CEO</strong><em>Hexafusion Infotech · Surat</em></div></li>
+            <li><span>2024 – now</span><div><strong>Full stack developer</strong><em>Independent · Remote</em></div></li>
+            <li><span>2022 – 2024</span><div><strong>Full stack developer</strong><em>Go Higher Infotech · Remote</em></div></li>
+          </ol>
+          <h3>Education</h3>
+          <ol class="timeline">
+            <li><span>2021 – 2023</span><div><strong>Master of Computer Applications</strong><em>Bhagwan Mahavir University</em></div></li>
+            <li><span>2018 – 2021</span><div><strong>Bachelor of Computer Applications</strong><em>Bhagwan Mahavir University</em></div></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--light">Contact</p>
+        <h2 class="contact__title">Have a project in mind?<br><span>Let's talk.</span></h2>
+        <a class="contact__mail" href="mailto:v.meet0503@gmail.com">v.meet0503@gmail.com <span aria-hidden="true">↗</span></a>
+        <ul class="contact__links">
+          <li><a href="https://wa.me/919023178824">WhatsApp</a></li>
+          <li><a href="tel:+919023178824">+91 90231 78824</a></li>
+          <li><a href="https://github.com/VMeet053">GitHub</a></li>
+          <li><a href="https://hexafusion-infotech.vercel.app/">Hexafusion Infotech</a></li>
+        </ul>
+        <p class="contact__note">I usually reply within a day.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot__in">
+      <span>© <span id="year">2026</span> Vasoya Meet</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
 
   <script src="assets/js/main.js" defer></script>
 </body>
