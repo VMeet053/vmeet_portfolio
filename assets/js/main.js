@@ -129,24 +129,6 @@
     counters.forEach(c => cio.observe(c));
   } else counters.forEach(runCount);
 
-  /* ---------- Hero word rotator ---------- */
-  const word = $('.rotator__word');
-  if (word && !reduced) {
-    const words = ['premium.', 'fast.', 'effortless.', 'remarkable.'];
-    let i = 0;
-    setInterval(() => {
-      word.classList.add('out');
-      setTimeout(() => {
-        i = (i + 1) % words.length;
-        word.textContent = words[i];
-        word.classList.remove('out');
-        word.classList.add('in');
-        void word.offsetWidth;
-        word.classList.remove('in');
-      }, 550);
-    }, 2600);
-  }
-
   /* ---------- Nav: scrolled / hide on scroll down / active link ---------- */
   const nav = $('#nav');
   let lastY = window.scrollY;
@@ -167,7 +149,7 @@
       navLinks.forEach(a => a.classList.toggle('is-active', a.getAttribute('href') === '#' + en.target.id));
     }
   }), { rootMargin: '-45% 0px -50% 0px' });
-  ['work', 'services', 'process', 'about', 'contact'].forEach(id => { const s = document.getElementById(id); if (s) secIO.observe(s); });
+  ['profile', 'company', 'work', 'approach', 'contact'].forEach(id => { const s = document.getElementById(id); if (s) secIO.observe(s); });
 
   /* ---------- Mobile menu ---------- */
   const burger = $('.burger');
@@ -243,8 +225,9 @@
     const note = $('#formNote');
     if (!ok) { note.textContent = 'Please fill in the highlighted fields.'; return; }
     const d = new FormData(form);
-    const subject = `New project enquiry — ${d.get('type')}`;
-    const body = `Hi Meet,\n\n${d.get('message')}\n\n— ${d.get('name')}\n${d.get('email')}`;
+    const org = d.get('organisation').trim();
+    const subject = `Enquiry: ${d.get('type')}${org ? ' — ' + org : ''}`;
+    const body = `Dear Mr. Vasoya,\n\n${d.get('message')}\n\nKind regards,\n${d.get('name')}${org ? '\n' + org : ''}\n${d.get('email')}`;
     window.location.href = `mailto:v.meet0503@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     note.textContent = 'Your email app should open now. Thanks!';
   });
